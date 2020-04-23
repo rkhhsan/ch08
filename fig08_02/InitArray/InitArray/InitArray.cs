@@ -9,7 +9,7 @@ public class InitArray
       int[] array; // declare array named array
 
       // create the space for array and initialize to default zeros
-      array = new int[5]; // 5 int elements
+      array = new int[10]; // 5 int elements
 
       Console.WriteLine("{0,6}{1,7}", "Index", "Value"); // headings
 
