@@ -5,51 +5,55 @@ using System;
 public class InitArray
 {
    // create and output rectangular and jagged arrays
-   public static void Main( string[] args )
+   public static void Main(string[] args)
    {
       // with rectangular arrays,
       // every row must be the same length.
-      int[ , ] rectangular = { { 1, 2, 3 }, { 4, 5, 6 } };
+      int[,] rectangular = { { 1, 2, 3 }, { 4, 5, 6 } };
 
       // with jagged arrays,
       // we need to use "new int[]" for every row,
       // but every row does not need to be the same length.
-      int[][] jagged = { new int[] { 1, 2 }, 
-                         new int[] { 3 }, 
-                         new int[] { 4, 5, 6 } };
+      int[][] jagged = { new int[] { 1, 2 },
+                         new int[] { 3 },
+                         new int[] { 30, -9 , -89, 345, 12},
+                         new int[] { 4, 5, 60 } };
 
-      OutputArray( rectangular ); // displays array rectangular by row
+      OutputArray(rectangular); // displays array rectangular by row
       Console.WriteLine(); // output a blank line
-      OutputArray( jagged ); // displays array jagged by row
+      OutputArray(jagged); // displays array jagged by row
+
+      Console.WriteLine("\nTecle qualquer tecla para finalizar...");
+      Console.ReadKey();
    } // end Main
 
    // output rows and columns of a rectangular array
-   public static void OutputArray( int[ , ] array )
+   public static void OutputArray(int[,] array)
    {
-      Console.WriteLine( "Values in the rectangular array by row are" );
+      Console.WriteLine("Values in the rectangular array by row are");
 
       // loop through array's rows
-      for ( int row = 0; row < array.GetLength( 0 ); ++row )
+      for (int row = 0; row < array.GetLength(0); ++row)
       {
          // loop through columns of current row
-         for ( int column = 0; column < array.GetLength( 1 ); ++column )
-            Console.Write( "{0}  ", array[ row, column ] );
+         for (int column = 0; column < array.GetLength(1); ++column)
+            Console.Write("{0,2}  ", array[row, column]);
 
          Console.WriteLine(); // start new line of output
       } // end outer for 
    } // end method OutputArray
 
    // output rows and columns of a jagged array
-   public static void OutputArray( int[][] array )
+   public static void OutputArray(int[][] array)
    {
-      Console.WriteLine( "Values in the jagged array by row are" );
+      Console.WriteLine("Values in the jagged array by row are");
 
       // loop through each row
-      foreach ( int[] row in array )
+      foreach (int[] row in array)
       {
          // loop through each element in current row
-         foreach ( int element in row )
-            Console.Write( "{0}  ", element );
+         foreach (int element in row)
+            Console.Write("{0,3}  ", element);
 
          Console.WriteLine(); // start new line of output
       } // end outer foreach
