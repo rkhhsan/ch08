@@ -6,7 +6,7 @@ public class InitArray
 {
    public static void Main(string[] args)
    {
-      const int ARRAY_LENGTH = 20; // create a named constant
+      const int ARRAY_LENGTH = 30; // create a named constant
       int[] array = new int[ARRAY_LENGTH]; // create array
 
       // calculate value for each array element
