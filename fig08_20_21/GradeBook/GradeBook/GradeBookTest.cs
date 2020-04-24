@@ -1,5 +1,7 @@
 ﻿// Fig. 8.21: GradeBookTest.cs
 // Create GradeBook object using a rectangular array of grades.
+using System;
+
 public class GradeBookTest
 {
    // Main method begins application execution
@@ -21,6 +23,9 @@ public class GradeBookTest
          "CS101 Introduction to C# Programming", gradesArray );
       myGradeBook.DisplayMessage();
       myGradeBook.ProcessGrades();
+
+      Console.WriteLine("\nTecle qualquer tecla para finalizar...");
+      Console.ReadKey();
    } // end Main
 } // end class GradeBookTest
 
