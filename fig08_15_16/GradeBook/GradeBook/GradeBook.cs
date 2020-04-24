@@ -97,7 +97,7 @@ public class GradeBook
 
       // for each grade, increment the appropriate frequency 
       foreach ( int grade in grades )
-         ++frequency[ grade / 10 ];
+         ++frequency[ grade / 10 ]; // divisão inteira
 
       // for each grade frequency, display bar in chart
       for ( int count = 0; count < frequency.Length; ++count )
