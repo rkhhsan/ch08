@@ -1,17 +1,21 @@
 ﻿// Fig. 8.16: GradeBookTest.cs
 // Create GradeBook object using an array of grades.
+using System;
 public class GradeBookTest
 {
    // Main method begins application execution
-   public static void Main( string[] args )
+   public static void Main(string[] args)
    {
       // one-dimensional array of student grades
       int[] gradesArray = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
 
       GradeBook myGradeBook = new GradeBook(
-         "CS101 Introduction to C# Programming", gradesArray );
+         "CS101 Introduction to C# Programming", gradesArray);
       myGradeBook.DisplayMessage();
       myGradeBook.ProcessGrades();
+
+      Console.WriteLine("\nTecle qualquer tecla para finalizar...");
+      Console.ReadKey();
    } // end Main
 } // end class GradeBookTest
 
