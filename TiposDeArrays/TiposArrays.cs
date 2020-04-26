@@ -2,7 +2,7 @@
 
 namespace TiposDeArrays
 {
-   class Program
+   class TiposArrays
    {
       static void Main(string[] args)
       {
