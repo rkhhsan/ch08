@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReferenceTest", "fig08
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassArray", "fig08_13\PassArray\PassArray\PassArray.csproj", "{00A0F0C5-CA96-484A-A77F-B7C62DF8B04F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiposDeArrays", "TiposDeArrays\TiposDeArrays.csproj", "{393FC17E-DAFB-48DE-89F7-DB61D7B95E9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{00A0F0C5-CA96-484A-A77F-B7C62DF8B04F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A0F0C5-CA96-484A-A77F-B7C62DF8B04F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00A0F0C5-CA96-484A-A77F-B7C62DF8B04F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393FC17E-DAFB-48DE-89F7-DB61D7B95E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393FC17E-DAFB-48DE-89F7-DB61D7B95E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393FC17E-DAFB-48DE-89F7-DB61D7B95E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393FC17E-DAFB-48DE-89F7-DB61D7B95E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
